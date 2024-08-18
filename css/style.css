@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(229, 188, 160);
+    color: rgb(61, 55, 55);
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: "Outfit", sans-serif;
+}
+
+.menu img {
+    width: 70vw;
+    border-radius: 20px;
+    margin: 60px;
+}
+
+.menu h1{
+    font-family: "Young Serif", serif;
+    font-size: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+
+.menu p{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+
+.menu h3{
+    margin-left: 70px;
+    margin-top: 30px;
+    color: rgb(109, 33, 71);
+}
+
+.menu ul, ol{
+    margin-left: 75px;
+    margin-right: 60px ;
+}
+
+.menu ul li{
+    margin: 15px;
+}
+
+
+span{
+    font-weight: bold;
+}
+
+.menu ol li{
+    margin: 15px;
+}
+ul li::marker{
+    color:  rgb(158, 89, 89) ;
+    font-weight: bold;
+}
+
+ol li::marker{
+    color:  rgb(158, 89, 89) ;
+    font-weight: bold;
+}
+.menu h2{
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(158, 89, 89);
+    font-family: "Young Serif", serif;
+}
+
+
+table {
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 30px;
+    border-collapse: collapse; /* Asegura que los bordes se colapsen y no haya espacio entre las celdas */
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    width: 300px;
+    margin: 20px;
+
+}
+
+tr{
+    height: 50px;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid  #bbb3b3; /* Línea entre cada fila */
+}
+
+/* Estilo alternativo para la última fila si no se quiere línea abajo */
+tr:last-child {
+    border-bottom: none;
+}
+
+.valores{
+    color: rgb(158, 89, 89);
+    font-weight: bold;
+}
+hr {
+    border: none; 
+    height: 1px; 
+    background-color: #bbb3b3; 
+    margin: 20px 0; 
+}
+
+.attribution{
+    margin: 10px;
+}
+.attribution a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        background-color: white;
+    }
+    .menu{
+        margin: 0;
+        padding: 0;
+    }
+    .menu img{
+        width: 100vw;
+        border-radius: 0px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+
